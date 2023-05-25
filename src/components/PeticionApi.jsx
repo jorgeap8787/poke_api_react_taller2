@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useEffect } from "react";
 
 const PeticionApi = () => {
-  return (
-    <div>PeticionApi</div>
-  )
-}
+  
+  const traerAnimales = async () => {};
+  const siguiente = () => { };
+  const atras = () => {};
 
-export default PeticionApi
+  return (
+    <div>
+      <h1>PETICION AL API DE POKEMON</h1>
+      <button onClick={traerAnimales}> Traer Pokemones</button>
+      <button onClick={atras}>Atrás</button>
+      <button onClick={siguiente}>Siguiente</button>
+
+      
+    </div>
+  );
+};
+
+export default PeticionApi;
