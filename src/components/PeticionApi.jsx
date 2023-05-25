@@ -1,10 +1,29 @@
 import React, { useEffect } from "react";
 
 const PeticionApi = () => {
+  const [animales, setAnimales] = React.useState([]);
+  const [paginacion, setPaginacion] = React.useState(0);
+  const [filasPorPagina, setFilasPorPagina] = React.useState(20);
+
+  const traerAnimales = async () => {
+    
+  };
+
+  const siguiente = () => {
+    setPaginacion((paginacion) => {
+      return paginacion + 1;
+    });
+  };
+
+  const atras = () => {
+    if (paginacion > 0) {
+      setPaginacion((paginacion) => {
+        return paginacion - 1;
+      });
+    }
+  };
+
   
-  const traerAnimales = async () => {};
-  const siguiente = () => { };
-  const atras = () => {};
 
   return (
     <div>
